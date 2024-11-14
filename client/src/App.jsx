@@ -5,6 +5,8 @@ import Cookies from 'universal-cookie';
 
 import {ChannelListContainer, ChannelContainer} from './components';
 
+import './App.css';
+
 const apikey = 'hsdgk8hkntn7';
 
 const client = StreamChat.getInstance(apikey);
@@ -12,16 +14,16 @@ const client = StreamChat.getInstance(apikey);
 const App = () => {
   return (
     <div className="app__wrapper">
-        <chat client={client} theme ="team light">
+        <Chat client={client} theme ="team light">
             <ChannelListContainer 
 
             />
             <ChannelContainer
 
             />
-        </chat>
+        </Chat>
     </div>
-  )
+  );
 }
 
 export default App
